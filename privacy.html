@@ -10,7 +10,7 @@
 <header class="hero">
   <div class="wrap">
     <h1>מדיניות פרטיות</h1>
-    <p class="tag en" lang="en" dir="ltr">Privacy policy · updated 26 September 2026</p>
+    <p class="tag en" lang="en" dir="ltr">Privacy policy · updated 27 September 2026</p>
   </div>
 </header>
 
@@ -18,9 +18,9 @@
   <section>
     <h2>בקצרה</h2>
     <ul>
-      <li>אנחנו אוספים רק את מה שצריך כדי ללמד: שם המשתמש במיינקראפט וההתקדמות בשיעורים.</li>
+      <li>אנחנו אוספים מידע הדרוש להפעלת השירות וללימוד: שם המשתמש במיינקראפט, התקדמות בשיעורים ונתוני חיבור טכניים.</li>
       <li>אנחנו אף פעם לא רואים או שומרים סיסמאות.</li>
-      <li>כשהילד אומר תשובה בקול, ההקלטה הקצרה נשלחת לתמלול בלבד - ולא נשמרת אצלנו.</li>
+      <li>בתשובה קולית, הקלטה קצרה נשלחת דרך OpenRouter למודל של Google לצורך תמלול. אנחנו לא שומרים את קובץ השמע בשרת שלנו, ומבקשים רק ספקים שלא שומרים אותו ולא מאמנים עליו.</li>
       <li>אין פרסומות, אין מכירת מידע, ואין מעקב.</li>
       <li>אפשר לבקש בכל רגע למחוק את כל המידע של הילד.</li>
     </ul>
@@ -38,13 +38,13 @@
     <p>Our server stores the child's lesson progress: steps completed, words learned, answers to exercises, and per-skill accuracy (listening, reading, writing, speaking). The class teacher sees this to help the child. It is kept on our server while the child is enrolled.</p>
 
     <h3>Spoken answers</h3>
-    <p>Some exercises ask the child to say a word or sentence out loud. Only during those exercises, the EnglishCraft mod records the answer (a few seconds) and our server sends it once to a speech-recognition service (OpenRouter, which routes it to Google's Gemini model) to turn it into text. We keep the text result with the child's progress; we do not save the audio. The recording is handled under <a href="https://openrouter.ai/privacy">OpenRouter's</a> and <a href="https://policies.google.com/privacy">Google's</a> privacy policies. The microphone is never used outside these exercises, and other players never hear it.</p>
+    <p>Some exercises ask the child to say a word or sentence out loud. When the child presses the talk key during a speaking exercise, the EnglishCraft mod records a short answer and our server sends it to OpenRouter, which routes the request to a Google Gemini model for transcription. If a request is slow, the server may send a second copy. We do not save the audio file on our server. The transcript is shown to the child and may be shown to the teacher and stored with learning progress. Our server asks OpenRouter to route these requests only to providers with a zero-data-retention policy that do not use the data for training. OpenRouter and the model provider handle the recording under that setting and their own <a href="https://openrouter.ai/privacy">privacy</a> and <a href="https://policies.google.com/privacy">data policies</a>. Other players do not hear the recording. Parents must explicitly opt in before a child uses voice exercises; a teacher or typing-based alternative is available.</p>
 
     <h3>Typed answers and chat</h3>
     <p>What the child types as an answer is checked by the server and shown to the teacher. Children's chat is limited to the class and visible to the teacher.</p>
 
     <h3>Technical data</h3>
-    <p>Our server keeps standard logs (connection times, IP address, errors) to keep the service working and safe. They are deleted after 30 days.</p>
+    <p>Our server keeps standard logs (connection times, IP address, errors) to keep the service working and safe. Archived server logs older than 30 days are removed when the server starts.</p>
 
     <h2>Who we share it with</h2>
     <ul>
@@ -55,7 +55,7 @@
     <p>We never sell data, show ads, or share it for marketing.</p>
 
     <h2>Children</h2>
-    <p>EnglishCraft is made for children and is used with a parent's consent, in classes led by a teacher. Parents can ask what we hold about their child, ask us to correct it, or ask us to delete it - email us and we'll do it within 30 days. Backups are overwritten within 10 days.</p>
+    <p>EnglishCraft is made for children and is used with a parent's consent, in classes led by a teacher. Voice exercises require a separate, explicit parental choice before the child uses them. Parents can ask what we hold about their child, ask us to correct it, or ask us to delete it - email us and we'll do it within 30 days. We keep the 10 most recent server backups, including learning progress; the time they cover depends on how often backups run.</p>
 
     <h2>Security</h2>
     <p>Data is stored on a private server that only we can access, and the game server only lets in approved players.</p>
